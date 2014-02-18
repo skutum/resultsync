@@ -1,0 +1,3 @@
+User-agent: * 
+Crawl-Delay: 20
+Sitemap: http://resultsync.com/sitemap.xml

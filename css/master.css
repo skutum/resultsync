@@ -1,0 +1,810 @@
+/* Gets rid of extra spacing caused by HTML */
+html {
+    min-height: 100%;
+    
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #0982cc;
+}
+
+/* Allows me to hide things... */
+.hidden {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border-style: none;
+}
+
+/* Main Div Dimentions and Properties */
+
+#page-container { 
+    width: 900px;
+    margin: auto;
+}
+#header {
+    height: 100px;
+    position: realative;
+}
+#search-bar {
+    height: 40px;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+#login-bar {
+    background: #222;
+    height: 40px;
+    position: relative;
+    -moz-border-radius:10px;  /* for Firefox */
+    -webkit-border-radius:10px; /* for Webkit-Browsers */
+    border-radius:10px; /* regular */
+    margin-bottom: 10px;
+    
+}
+
+#sidebar-a {
+    float: left;
+    width: 210px;
+    height: 100%;
+    background: #222;
+    -moz-border-radius:10px;  /* for Firefox */
+    -webkit-border-radius:10px; /* for Webkit-Browsers */
+    border-radius:10px; /* regular */
+    margin-bottom: 10px;
+}
+#content {
+    margin-left: 220px;
+    margin-bottom: 10px;
+}
+#footer {
+    clear: both;
+    background: #222;
+    height: 40px;
+    -moz-border-radius:10px;  /* for Firefox */
+    -webkit-border-radius:10px; /* for Webkit-Browsers */
+    border-radius:10px; /* regular */
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+#altnav {
+   display: inline-block;
+    
+}
+
+/* Text Fonts and Styles */
+p {
+    color: 000;
+    font-family: arial;
+    display: inline;
+    font-size: 14px;
+}
+h1{
+    color: #fff;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: #fff;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+h3 {
+    color: #ccc;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+h4 {
+    color: #3FA9F5;
+    font-family: arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+h5{
+    color: white;
+    display: inline;
+    font-size: 14px;
+    font-family: arial;
+}
+h6{
+    color: #fff;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+#content p{
+    display: inline;
+    color: #222; 
+    margin: 0;
+    padding: 0;
+}
+/* Makes signup form stack */
+
+#content form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    float: right;
+    width: 230px;
+    background: #222;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#content label{
+    color: #ccc;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+#content span{
+    color: #fff;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+#content a {
+    color: #222;
+    font-family: arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+#footer a {
+    color: #CCC;
+    font-family: arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+
+}
+
+#header h1 {
+    color: #fff;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 35px;
+    padding-right: 10px;
+}
+#login-bar h2 {
+    color: #fff;
+    font-family: Arial;
+    font-size: 22px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 12px;
+    padding-left: 5px;
+    
+}
+#login-bar form {
+     margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 4px;
+    padding-right: 5px;
+}
+#login-bar input {
+    height: 20px;
+}
+#login-bar input.button {
+    height: 31px;
+}
+/* Input Fields to Be Rounded for login bar*/
+input {
+    
+}
+input.rounded {
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    width: 215px;
+}
+input.rounded:focus {
+    border-color: #339933;
+}
+/* Text Area rounded */
+textarea {
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+textarea:focus {
+    border-color: #339933;
+}
+
+/* Add result bigger input fields */
+input.add {
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    width: 858px;
+}
+input.add:focus {
+    border-color: #FF931E;
+}
+
+/* Buttons for login bar */
+
+.button {
+	background: #7ac943;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+        border:1px solid #7AC943;
+	display:inline-block;
+	color:#fff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #7AC943;
+        width: 100px;
+}
+.button:hover {
+	
+        background: #FF931E;
+        border-radius:6px;
+        border:1px solid #FF931E;
+}
+.button:active {
+	position:relative;
+	top:1px;
+        border-radius:6px;
+        border:1px solid #FF931E;
+}
+/* Button for Signup Form */
+.sbutton {
+
+	background: #7AC943;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+        border:1px solid #7AC943;
+	display:inline-block;
+	color:#fff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #7AC943;
+        float: right;
+        margin-top: 15px;
+        width: 100px;
+}
+.sbutton:hover {
+	
+	background: #FF931E;
+        border-radius:6px;
+        border:1px solid #FF931E;
+}
+.sbutton:active {
+	position:relative;
+	top:1px;
+        border-radius:6px;
+        border:1px solid #FF931E;
+}
+/* Button for Adding a new result */
+.abutton {
+	background: #7ac943;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+        border:1px solid #7AC943;
+	display:inline-block;
+	color:#fff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #7AC943;
+        width: 200px;
+}
+.abutton:hover {
+	
+        background: #FF931E;
+        border-radius:6px;
+        border:1px solid #FF931E;
+}
+.abutton:active {
+	position:relative;
+	top:1px;
+        border-radius:6px;
+        border:1px solid #FF931E;
+}
+
+#sidebar-a form {
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 10px;
+    padding-left: 12px;
+    
+}
+#sidebar-a h3 {
+    color: #fff;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-left: 10px;
+    
+}
+/* Search Box CSS */
+#search {
+    float: right;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+
+#search input[type="text"] {
+    background: url(../img/search-dark.png) no-repeat 10px 6px #444;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #CCC;
+    width: 200px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset; 
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+    width: 250px;
+}
+
+/*Sidebar Categories Menu*/
+
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 200px; /* Main Menu Item widths */
+border-bottom: 1px solid #222;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level categories menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: #CCC;
+text-decoration: none;
+padding: 6px;
+
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+background-color: #222; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: #CCC;
+}
+
+.sidebarmenu ul li a:hover{
+background-color: #FF931E;
+color: #fff;
+}
+
+/*Sub level categories menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+width: 170px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+
+.sidebarmenu a.subfolderstyle{
+background: url(right.gif) no-repeat 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+
+
+/* The CSS Code for the user menu starts here */
+#menu {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px ;
+    padding: 0 0 0 10px;
+    list-style-type: none;
+    font-size: 13px;
+    background: #eee;
+    height: 40px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border-top: 2px solid #eee;
+    border-left: 2px solid #eee;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+#menu li {
+    float: left;
+    margin: 0;
+}
+#menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #666;
+}
+#menu li a:hover, #menu li.active a {
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #DDD;
+    color: #999;
+}
+#menu li b {
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #666;
+}
+
+
+/* Black Menu */
+#menu.black {
+    border-top: 2px solid #222;
+    border-left: 2px solid #222;
+    border-bottom: 2px solid #222;
+    border-right: 2px solid #222;
+    background: #222;}
+#menu.black a {color: #CCC;}
+#menu.black li a:hover, #menu.black li.active a {color: #fff; background: #FF931E; border-bottom: 2px solid #222;}
+
+/*Jquery Slider CSS*/
+
+
+
+/*Box's with new results on Home Page*/
+#box {
+    width: 136px;
+    height: 135px;
+    background: #ffffff;
+    border: 2px solid #FF931E;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    float: right;
+    
+}
+#box:hover {
+    
+    border: 2px solid #7AC943; 
+}
+.boximage {  
+  max-width: 136px;
+  max-height: 100px;
+  width: expression(this.width > 136 ? "136px" : true);
+  height: expression(this.height > 98 ? "98px" : true);
+}
+#box img.boximage {
+  display: block;
+  margin: 0 auto;
+  padding-top: 3px;
+}  
+/*Sign up and About button*/
+#signupbutton {
+    width: 680px;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#signupbutton a {
+    margin-left: 240px;
+    background: #7AC943;
+    padding: 10px;
+    border: 1px solid #7AC943;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;    
+}
+#signupbutton a:hover {
+    background: #FF931E;
+    border: 1px solid #FF931E;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;   
+}
+
+span{
+    color: #fff;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+/*Css for the Add Result Page, the one where you can upload your own result */
+#addResult {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#addResult select {
+    font-family: arial;
+    color: black;
+}
+#firstCategory {
+    float: left;
+}
+#secondCategory {
+    float: left;
+    margin-left: 70px;
+}
+#thirdCategory {
+    float: left;
+    margin-left: 70px;
+}
+#firstImage {
+    float: left;
+}
+#secondImage {
+    float: left;
+    margin-left: 40px;
+}
+#thirdImage {
+    float: left;
+    margin-left: 40px;
+}
+textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+/*CSS for reslut.php page, the one that shows the desired result. */
+.resultImage {
+  max-width: 600px;
+  max-height: 600px;
+  width: expression(this.width > 600 ? "600px" : true);
+  height: expression(this.height > 600 ? "600px" : true);
+}
+#content img.resultImage {
+  display: block;
+  margin: 0 auto;  
+}
+#video {
+    margin-left: 50px;
+}
+#resultDisplay {
+    width: 655px;
+    background: #ffffff;
+    border: 2px solid #FF931E;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    float: right;
+
+}
+#resultDisplay h1{
+    color: #222;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+#resultDisplay h2{
+    color: #222;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+/* Css used to make resluts.php display nice, shows desired results by selected category */
+#result {
+    width: 655px;
+    background: #ffffff;
+    border: 2px solid #FF931E;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    float: right;
+    vertical-align: middle;
+
+}
+#result img {
+vertical-align: middle; 
+}
+#result h2{
+    color: #222;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+#result h3 {
+    color: #444;
+    font-family: Arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+/* Used to space the facbook, twitter, and save result links on the result.php page */
+#linkSpacer {
+    float: right;
+    margin-right: 25px;
+    width:150px;
+}
+#linkSpacerf {
+    float: right;
+    margin-right: 70px;
+    width:150px;
+}
+#content form.myAccount{
+    background-color: #FF931E;
+    width: 230px;
+    margin-right: 220px;
+}
+#content .pages {
+    width: 680px;
+    float: right;
+    text-align: center;
+}
+/* USed for the sugestions page */
+#suggestPost
+{
+background: url(../img/suggestions.png) no-repeat scroll 0px 0px;
+height:200px;
+left:0;
+position:fixed;
+top:150px;
+width:40px;
+}
+
+#suggestPost a
+{
+display:block;
+height:200px;
+width:40px;
+}
+#content form.suggestions{
+    background-color: #FF931E;
+    width: 560px;
+    margin-right: 40px;
+}
+#content input.suggestions{
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    width: 540px;   
+}
+#content input.suggestions:focus {
+    border-color: #FF931E;
+}
+/* Used for Comment form for users to comment on a Result */
+#content form.comment {
+    width: 635px;
+}
+#content input.rating {
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    width: 15px; 
+    
+}
+#content input.submitComment {
+    border: 1px solid #FF931e;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    padding: 4px 7px;
+    -webkit-appearance: none;
+    background: #FF931e;
+    width: 150px;
+}
+#content input.submitComment:hover {
+    background: #7AC943;
+    border: 1px solid #7AC943;
+}
+#comment {
+    width: 635px;
+    border: 1px solid #222;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #222;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#comment h3 {
+    color: #CCC;
+    font-family: arial;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
