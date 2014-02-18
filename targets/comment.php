@@ -1,6 +1,6 @@
 <?php
 //This code adds comments to results
-include '../includes/config.php';
+include '../../config.php';
 //Makes rating be withing 1 to 5 and checks to make sure that it is a number
 
 $rating = mysql_real_escape_string($_POST['rating']);

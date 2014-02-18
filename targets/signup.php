@@ -1,6 +1,6 @@
 <?php
 //This code places a new user into the table users
-include '../includes/config.php';
+include '../../config.php';
 // Validates Signup Form 
 $errEmail = "";
 $errPassword = "";

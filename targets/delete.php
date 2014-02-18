@@ -1,5 +1,5 @@
 <?php
-include '../includes/config.php';
+include '../../config.php';
 
 $query = "SELECT imageOne, imageTwo, imageThree FROM  `results` WHERE id=". $_GET['id'];
 $result = mysql_query($query);

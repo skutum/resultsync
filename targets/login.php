@@ -1,6 +1,6 @@
 <?php
 //This code logs a user in.
-include_once '../includes/config.php';
+include_once '../../config.php';
 $password = $_POST['pass'];
 // SQL Stuff: extract password from database and save to $passwordFromDatabase here
 $sql = "SELECT * FROM `users` WHERE email='" . mysql_real_escape_string($_POST['email']) . "'";

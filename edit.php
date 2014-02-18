@@ -1,5 +1,5 @@
 <?php
-include 'includes/config.php';
+include '../config.php';
 $query = mysql_query("SELECT id,category FROM categories");
 $query2 = mysql_query("SELECT id,category FROM categories");
 $query3 = mysql_query("SELECT id,category FROM categories");

@@ -1,6 +1,6 @@
 <?php
 //This code prints a welcome user on menu bar. Linked to menu.php in includes
-include_once 'includes/config.php';
+include_once '../config.php';
 $sql = "SELECT * FROM `users` WHERE id='" . getuserid() . "'";
 $result = mysql_query($sql, $connection) or die(mysql_error());
 

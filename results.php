@@ -1,4 +1,4 @@
-<?php include 'includes/config.php';
+<?php include '../config.php';
 $query = mysql_query("SELECT id,category FROM categories WHERE id=".$_GET['id']);
 $category = mysql_fetch_assoc($query);
 ?>

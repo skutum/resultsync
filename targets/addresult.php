@@ -1,6 +1,6 @@
 <?php
 //This code places a result into the results table
-include '../includes/config.php';
+include '../../config.php';
 // Validates that data was entered
 // Defines default Error Variables
 $errTitle = "";

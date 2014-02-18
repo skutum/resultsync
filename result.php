@@ -1,4 +1,4 @@
-<?php include 'includes/config.php'; 
+<?php include '../config.php'; 
     //Gets Result Data
     $query = "SELECT id, userid, title, description, imageOne, imageTwo, imageThree, video, website, ebay, amazon, facebook, twitter,
     linkedin, live, rating, numberOfViews, dateCreated FROM  `results` WHERE id=" . $_GET['id'];
